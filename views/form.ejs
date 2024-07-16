@@ -6,22 +6,33 @@
   </head>
   <body>
     <h1>Create a new message</h1>
-    <form method="POST" action="/new">
-      <input
-        label="author"
-        id="messageUser"
-        name="messageUser"
-        type="text"
-        required
-      />
-      <input
-        label="message"
-        id="messageText"
-        name="messageText"
-        type="text"
-        required
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <div id="form-container">
+      <form method="POST" action="/new">
+        <div class="form-element">
+          <label>Your Name *</label>
+          <input
+            placeholder="Your name here..."
+            id="messageUser"
+            name="messageUser"
+            type="text"
+            required
+          />
+        </div>
+        <div class="form-element">
+          <label>Your Message *</label>
+          <input
+            placeholder="Your message here..."
+            id="messageText"
+            name="messageText"
+            type="text"
+            required
+          />
+        </div>
+
+        <div class="form-element">
+          <button id="form-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
